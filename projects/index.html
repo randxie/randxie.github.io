@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Yevgeniy Brikman: Projects"
+header_title: Projects
+include_header: projects_header.html
+nav_item: projects
+---
+
+{% for project in site.data.projects %}
+  {% include project-outline.html project=project %}
+{% endfor %}
