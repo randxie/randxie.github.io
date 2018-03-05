@@ -1,5 +1,7 @@
 # Website settings
-url: "randxie.github.io"
+url:
+
+baseurl: ""
 
 # Internal nav
 nav:
