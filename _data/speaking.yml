@@ -19,3 +19,16 @@
       url: "https://www.youtube.com/watch?v=HhgB6CicWiY"
     - label: "Slides"
       url: "https://docs.google.com/presentation/d/1YdR8KYffJQ93ROThS5y-efAmRAG283bcBmyKiKCBQ1I/edit?usp=sharing"
+
+- name: "DS207 at Bittiger"
+  date: "Feb 24, 2017"
+  description: |
+    I gave two lectures at Bittiger to guide students through basic procedures in a Kaggle competition. These two lectures focused on analyzing time series data,
+    specifically multi-channel EEG signals. The target is to extract features from EEG signals that can be used to predict seizure.
+  embed_url: "https://www.bittiger.io/livecourses/q3zHa7ALACu3EEaKT"
+  links:
+    - label: "Slides-Part_1"
+      url: "https://docs.google.com/presentation/d/1SE9C6Bb1DtKA_a6PpSTwxkhmVGC5TGk7Qpr4RsnHdmE/edit?usp=sharing"
+    - label: "Slides-Part_2"
+      url: "https://docs.google.com/presentation/d/1ntJLcE8hSTw-XdwlfbBMo1G8l4q6b783LRKkgIRJ2Sw/edit?usp=sharing"
+
