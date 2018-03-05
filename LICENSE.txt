@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) 2015 Yevgeniy Brikman
+Copyright for portions of project yevgeniy-brikman-homepage are held by [Yevgeniy Brikman, 2015] as part of project randxie.github.io. 
+All other copyright for project randxie.github.io are held by [Rand Xie, 2018].
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
