@@ -32,7 +32,11 @@ contact_urls:
   kaggle:
     url: "https://www.kaggle.com/randxie"
     label: "Kaggle"
-    icon: "icons/kaggle.png"
+    icon: "coffee"
+  zhihu:
+    url: "https://www.zhihu.com/people/xiao-yu-22-71-20/answers"
+    label: "Zhihu"
+    icon: "book"
   github:
     url: "https://github.com/randxie"
     label: "GitHub"
@@ -45,6 +49,7 @@ contact_urls:
 
 uptake_url: "https://www.uptake.com/"
 mathworks_url: "https://www.mathworks.com/"
+pm_toolbox_url: "https://www.mathworks.com/products/predictive-maintenance.html/"
 
 # Jekyll build settings
 paginate: 10

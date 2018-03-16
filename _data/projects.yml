@@ -1,10 +1,24 @@
-- name: "[DIY] Model Aircraft"
+- name: "Open Source Contributions"
+  date: "2017-Now"
+  description: |
+    In my spare time, I make contribution to open source projects. Here are the collection of projects I had contributed to: <br>
+    <ul type="square">
+      <li> <a href="https://github.com/randxie/kaggle-pipeline" target="_blank"> kaggle-pipeline </li>   
+      <li> <a href="https://github.com/aksnzhy/xlearn" target="_blank"> xlearn </a> </li>
+      <li> <a href="https://github.com/Microsoft/LightGBM" target="_blank"> lightGBM </a> </li>
+      <li> <a href="https://github.com/pytorch/pytorch" target="_blank"> pytorch </li>
+    </ul>
+  image: "github_logo.png"
+- name: "Design, build and fly"
   date: "2014"
   description: |
-    I worked with a team of classmates from different engineering/physics backgrounds in a model aircraft competitions.
+    I worked with a team of school mates from different engineering/science backgrounds to participate in a model aircraft competition 
+    <a href="http://www.aiaadbf.org/" target="_blank"> design, build and fly </a>. We ranked 34th out of 80 in the competition. Please find our
+    aircraft <a href="https://aero.mae.ust.hk/events/news/post/dbf-competition-2014" target="_blank"> here </a>.
   image: "diy_model_aircraft.jpg"
-- name: "[DIY] CNC Machine"
+- name: "3-axis CNC Machine"
   date: "2013"
   description: |
-    I designed and manufactured a 3-axis CNC machine that is capable of carving on acrylic board
+    I designed and manufactured a 3-axis CNC machine that is capable of carving on acrylic board. For more detail, 
+    please refer to my <a href="https://www.zhihu.com/question/22794693/answer/36840728" target="_blank">zhihu answer </a> 
   image: "diy_cnc.jpg"
