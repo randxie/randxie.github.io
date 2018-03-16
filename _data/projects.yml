@@ -9,6 +9,24 @@
       <li> <a href="https://github.com/pytorch/pytorch" target="_blank"> pytorch </li>
     </ul>
   image: "github_logo.png"
+- name: "Kaggle Competitions"
+  date: "2017"
+  description: |
+    I play Kaggle competitions almost everyday since 2017. Here are some of my Kaggle achievements: <br>
+    <ul type="square">
+      <li> <a href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring" target="_blank"> The Nature Conservancy Fisheries Monitoring </a> 12/2293</li>   
+      <li> <a href="https://www.kaggle.com/c/mercari-price-suggestion-challenge" target="_blank"> Mercari Price Suggestion Challenge </a> 22/2384 </li>
+      <li> <a href="https://www.kaggle.com/c/quora-question-pairs" target="_blank"> Quora Question Pairs </a> 119/3307 </li>
+      <li> <a href="https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries" target="_blank"> Two Sigma Connect Rental Listing Inquiries </a> 162/2488 </li>
+    </ul>
+  image: "kaggle.png"
+- name: "Predictive maintenance toolbox"
+  date: "2017"
+  description: |
+    <a href="https://www.mathworks.com/products/predictive-maintenance.html" target="_blank"> Predictive maintenance toolbox </a> is a 
+    product I built with a team of smart colleagues when I was working at MathWorks. It offers algorithms, visualization & deployment infrastructures for engineers
+    and scientists to build their fault diagnostics and remaining useful life estimation capabilities.
+  image: "matlab.jpg"
 - name: "Design, build and fly"
   date: "2014"
   description: |
