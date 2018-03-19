@@ -12,7 +12,7 @@
 - name: "Kaggle Competitions"
   date: "2017"
   description: |
-    I play Kaggle competitions almost everyday since 2017. Here are some of my Kaggle achievements: <br>
+    I play Kaggle competitions almost everyday since 2017. Currently, I am a Kaggle Competition Master and have highest ranking 192/78196. Here are some of my Kaggle achievements: <br>
     <ul type="square">
       <li> <a href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring" target="_blank"> The Nature Conservancy Fisheries Monitoring </a> 12/2293</li>   
       <li> <a href="https://www.kaggle.com/c/mercari-price-suggestion-challenge" target="_blank"> Mercari Price Suggestion Challenge </a> 22/2384 </li>
@@ -40,3 +40,9 @@
     I designed and manufactured a 3-axis CNC machine that is capable of carving on acrylic board. For more detail, 
     please refer to my <a href="https://www.zhihu.com/question/22794693/answer/36840728" target="_blank">zhihu answer </a> 
   image: "diy_cnc.jpg"
+- name: "Asia-Pacific Robot Contest"
+  date: "2012"
+  description: |
+    I worked with a team of school mates from different engineering disciplines to participate in a robot contest. We won the first runner-up in the Hong
+    Kong regional competition. Please find our robots <a href="https://www.youtube.com/watch?v=hMo0759PkV0" target="_blank"> here </a>.
+  image: "diy_auto_rebot.jpg"

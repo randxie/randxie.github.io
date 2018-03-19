@@ -60,6 +60,7 @@ sass:
   style: :compressed
 highlighter: rouge
 timezone: 'America/Los_Angeles'
+markdown: kramdown
 
 # Plugins (GitHub Pages only support a few)
 gems:

@@ -6,6 +6,7 @@ RUN apk-install bash build-base git libffi-dev zlib-dev libxml2-dev libxslt-dev 
 
 # Install Jekyll
 RUN gem install bundler jekyll --no-ri
+RUN gem install kramdown
 
 # Install nokogiri separately because it's special
 RUN gem install nokogiri  --no-ri
