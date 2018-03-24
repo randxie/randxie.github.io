@@ -61,3 +61,8 @@ The rest of MJ's solution is quite standard. The hidden layers in DAE are used a
 ### Sparse Multilayer Perceptron (MLP)
 
 
+<br />
+### Wavenet-like Time Series Network
+
+
+

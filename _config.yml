@@ -62,6 +62,9 @@ highlighter: rouge
 timezone: 'America/Los_Angeles'
 markdown: kramdown
 
+disqus:
+  shortname: randxie
+
 # Plugins (GitHub Pages only support a few)
 gems:
   - jekyll-redirect-from
