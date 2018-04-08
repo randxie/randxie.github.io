@@ -32,3 +32,15 @@
     - label: "Slides-Part_2"
       url: "https://docs.google.com/presentation/d/1ntJLcE8hSTw-XdwlfbBMo1G8l4q6b783LRKkgIRJ2Sw/edit?usp=sharing"
 
+- name: "IMS Industry Advisory Board Meeting"
+  date: "Dec 5, 2015"
+  description: |
+    I presented my master research "model-based human neuromuscular (NMS) system monitoring" on an industry advisory 
+    board meeting organized by center of Intelligent Maintenance Systems. This research tries to build up
+    linkage between time frequency features extracted from biomedical system and system dynamics.
+  links:
+    - label: "Slides"
+      url: "https://docs.google.com/presentation/d/1OAT8x31fZBdlrd72egAnPbnHUd7h0tUYwS8QxTIsDnA/edit?usp=sharing"
+    - label: "Master Thesis"
+      url: "https://repositories.lib.utexas.edu/bitstream/handle/2152/39341/XIE-THESIS-2016.pdf?sequence=1"
+
