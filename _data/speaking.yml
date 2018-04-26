@@ -38,6 +38,7 @@
     I presented my master research "model-based human neuromuscular (NMS) system monitoring" on an industry advisory 
     board meeting organized by center of Intelligent Maintenance Systems. This research tries to build up
     linkage between time frequency features extracted from biomedical system and system dynamics.
+  embed_url: "http://www.imscenter.net/"
   links:
     - label: "Slides"
       url: "https://docs.google.com/presentation/d/1OAT8x31fZBdlrd72egAnPbnHUd7h0tUYwS8QxTIsDnA/edit?usp=sharing"
