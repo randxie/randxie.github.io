@@ -12,7 +12,7 @@
 - name: "Kaggle Competitions"
   date: "2017"
   description: |
-    I play Kaggle competitions almost everyday since 2017. Currently, I am a Kaggle Competition Master and have highest ranking 192/78196. Here are some of my Kaggle achievements: <br>
+    I was actively participating in Kaggle competitions from Oct 2016 to Jan 2018, and retired with highest ranking: 185/82368 and tier "Kaggle Competition Master". Here are some of my Kaggle achievements: <br>
     <ul type="square">
       <li> <a href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring" target="_blank"> The Nature Conservancy Fisheries Monitoring </a> 12/2293</li>   
       <li> <a href="https://www.kaggle.com/c/mercari-price-suggestion-challenge" target="_blank"> Mercari Price Suggestion Challenge </a> 22/2384 </li>
@@ -27,6 +27,18 @@
     product I built with a team of smart colleagues when I was working at MathWorks. It offers algorithms, visualization & deployment infrastructures for engineers
     and scientists to build their fault diagnostics and remaining useful life estimation capabilities.
   image: "matlab.jpg"
+- name: "Academic Research"
+  date: "2016"
+  description: |
+    I enjoy doing research and extend the human knowledge. Here are the collection of academic researches I had participated: <br>
+    <ul type="square">
+      <li> Reviewer of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856" target="_blank"> IEEE Transactions on Automation Science and Engineering </a> </li>  
+      <li> Master Thesis: 
+      <a href="https://repositories.lib.utexas.edu/bitstream/handle/2152/39341/XIE-THESIS-2016.pdf?sequence=1" target="_blank"> A Model Based Approach for Evaluating Human Neuromusculoskeletal
+      System Performance </a> </li>  
+      <li> Undergraduate Final Project: <a href="https://www.sciencedirect.com/science/article/pii/S0008622316300124" target="_blank"> Electrospun graphitic carbon nanofibers with in-situ encapsulated Co–Ni nanoparticles as freestanding electrodes for Li–O2 batteries </a> </li>  
+    </ul>
+  image: "researcher.png"
 - name: "Design, build and fly"
   date: "2014"
   description: |
