@@ -79,7 +79,7 @@ def buildTree(arr: Array[T],
             rIdx: Int): SegmentTreeNode[T] = {
     if (lIdx == rIdx) {
           // leave nodes
-          var node = new SegmentTreeNode[T] {
+        var node = new SegmentTreeNode[T] {
           var leftIdx = lIdx
           var rightIdx = rIdx
           var leftChild = null.asInstanceOf[SegmentTreeNode[T]]
@@ -88,9 +88,9 @@ def buildTree(arr: Array[T],
         }
         return node
     } else {
-          // recursively build tree
-          val mIdx: Int = findMiddleIdx(lIdx, rIdx)
-          var node = new SegmentTreeNode[T] {
+        // recursively build tree
+        val mIdx: Int = findMiddleIdx(lIdx, rIdx)
+        var node = new SegmentTreeNode[T] {
           var leftIdx = lIdx
           var rightIdx = rIdx
           var leftChild = buildTree(arr, lIdx, mIdx)
