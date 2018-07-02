@@ -9,7 +9,7 @@
       <li> <a href="https://github.com/pytorch/pytorch" target="_blank"> pytorch </li>
     </ul>
   image: "github_logo.png"
-- name: "Kaggle Competitions"
+- name: "Kaggle Competitions / Data Challenges"
   date: "2017"
   description: |
     I was actively participating in Kaggle competitions from Oct 2016 to Jan 2018, and retired with highest ranking: 185/82368 and tier "Kaggle Competition Master". Here are some of my Kaggle achievements: <br>
@@ -19,6 +19,12 @@
       <li> <a href="https://www.kaggle.com/c/quora-question-pairs" target="_blank"> Quora Question Pairs </a> 119/3307 </li>
       <li> <a href="https://www.kaggle.com/c/two-sigma-connect-rental-listing-inquiries" target="_blank"> Two Sigma Connect Rental Listing Inquiries </a> 162/2488 </li>
     </ul>
+    I recently start to participate challenges hosted by JD.com related to <a href="https://jdata.jd.com/html/list.html" target="_blank"> retails & logistic optimization</a>,
+    as well as challenges hosted by <a href="https://www.crowdai.org/challenges" target="_blank"> crowdAI </a> related to deep reinforcement learning. Some achievement(s) include: 
+    <ul type="square">
+      <li> <a href="https://jdata.jd.com/html/detail.html?id=2" target="_blank"> User Purchase Time Prediction </a> ~23/5182</li>   
+    </ul>
+
   image: "kaggle.png"
 - name: "Predictive maintenance toolbox"
   date: "2017"
@@ -30,13 +36,13 @@
 - name: "Academic Research"
   date: "2016"
   description: |
-    I enjoy doing research and extend the human knowledge. Here are the collection of academic researches I had participated: <br>
+    I enjoy doing research and extend the human knowledge. Here are the collection of academic researches I had participated in: <br>
     <ul type="square">
       <li> Reviewer of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856" target="_blank"> IEEE Transactions on Automation Science and Engineering </a> </li>  
       <li> Master Thesis: 
       <a href="https://repositories.lib.utexas.edu/bitstream/handle/2152/39341/XIE-THESIS-2016.pdf?sequence=1" target="_blank"> A Model Based Approach for Evaluating Human Neuromusculoskeletal
       System Performance </a> </li>  
-      <li> Undergraduate Final Project: <a href="https://www.sciencedirect.com/science/article/pii/S0008622316300124" target="_blank"> Electrospun graphitic carbon nanofibers with in-situ encapsulated Co–Ni nanoparticles as freestanding electrodes for Li–O2 batteries </a> </li>  
+      <li> Undergraduate Final Project (Published in Journal Carbon): <a href="https://www.sciencedirect.com/science/article/pii/S0008622316300124" target="_blank"> Electrospun graphitic carbon nanofibers with in-situ encapsulated Co–Ni nanoparticles as freestanding electrodes for Li–O2 batteries </a> </li>  
     </ul>
   image: "researcher.png"
 - name: "Design, build and fly"
