@@ -3,6 +3,7 @@
   description: |
     In my spare time, I make contribution to open source projects. Here are the collection of projects I had contributed to: <br>
     <ul type="square">
+      <li> <a href="https://github.com/randxie/scikit-flow" target="_blank"> scikit-flow </li>
       <li> <a href="https://github.com/randxie/kaggle-pipeline" target="_blank"> kaggle-pipeline </li>   
       <li> <a href="https://github.com/aksnzhy/xlearn" target="_blank"> xlearn </a> </li>
       <li> <a href="https://github.com/Microsoft/LightGBM" target="_blank"> lightGBM </a> </li>
@@ -36,7 +37,7 @@
 - name: "Academic Research"
   date: "2016"
   description: |
-    I enjoy doing research and extend the human knowledge. Here are the collection of academic researches I had participated in: <br>
+    I enjoy doing research and extend the boundary of human knowledge. Here are the collection of academic researches I had participated in: <br>
     <ul type="square">
       <li> Reviewer of <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856" target="_blank"> IEEE Transactions on Automation Science and Engineering </a> </li>  
       <li> Master Thesis: 
