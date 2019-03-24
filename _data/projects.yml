@@ -14,7 +14,7 @@
   date: "2019"
   description: |
     I supervised Team Deadlock (a team of 10 engineers) to participate in <a href="https://www.herox.com/alphapilot" target="_blank"> Alpha pilot competition </a> to develop a high speed vision based flight control system. Several core technologies are developed to safely and efficiently finish drone racing task, including cascading PID controller, state estimation by visual inertial odometry, low latency object detection and structure from motion.
-  image: "alphapilot.jpg"
+  image: "alphapilot.png"
 - name: "Kaggle Competitions / Data Challenges"
   date: "2017"
   description: |
