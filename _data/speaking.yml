@@ -1,5 +1,5 @@
 - name: "Model Explainability"
-  date: "June 28, 2017"
+  date: "Apr 10, 2019"
   description: |
     In this talk, I shared how Shapley value can be applied to explain ML models, using the data from Kaggle text normalization competition.
   embed_url: "//www.youtube.com/embed/uwGs3pOJ1M4"
