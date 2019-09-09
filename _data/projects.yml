@@ -10,6 +10,11 @@
       <li> <a href="https://github.com/pytorch/pytorch" target="_blank"> pytorch </li>
     </ul>
   image: "github_logo.png"
+- name: "DelTron AIoT Platform"
+  date: "2019"
+  description: |
+    I work as the Cloud Architect of <a href="https://www.deltron.tech/english/deltron" target="_blank"> DelTron Intelligence Technology </a> to help them build a cloud AIoT platform.
+  image: "deltron.png"
 - name: "Alpha Pilot - Team Deadlock"
   date: "2019"
   description: |
@@ -56,7 +61,7 @@
   description: |
     I worked with a team of school mates from different engineering/science backgrounds to participate in a model aircraft competition
     <a href="http://www.aiaadbf.org/" target="_blank"> design, build and fly </a>. We ranked 34th out of 80 in the competition. Please find our
-    aircraft <a href="https://aero.mae.ust.hk/events/news/post/dbf-competition-2014" target="_blank"> here </a>.
+    aircraft <a href="https://aero.mae.ust.hk/dbf-competition-2014/" target="_blank"> here </a>.
   image: "diy_model_aircraft.jpg"
 - name: "3-axis CNC Machine"
   date: "2013"
