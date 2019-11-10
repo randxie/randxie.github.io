@@ -5,6 +5,7 @@
     <ul type="square">
       <li> <a href="https://github.com/randxie/scikit-flow" target="_blank"> scikit-flow </li>
       <li> <a href="https://github.com/randxie/kaggle-pipeline" target="_blank"> kaggle-pipeline </li>
+      <li> <a href="https://github.com/randxie/alpha-pilot-team-deadlock" target="_blank"> alpha-pilot-team-deadlock </li>
       <li> <a href="https://github.com/aksnzhy/xlearn" target="_blank"> xlearn </a> </li>
       <li> <a href="https://github.com/Microsoft/LightGBM" target="_blank"> lightGBM </a> </li>
       <li> <a href="https://github.com/pytorch/pytorch" target="_blank"> pytorch </li>
@@ -18,7 +19,7 @@
 - name: "Alpha Pilot - Team Deadlock"
   date: "2019"
   description: |
-    I supervised Team Deadlock (a team of 10 engineers) to participate in <a href="https://www.herox.com/alphapilot" target="_blank"> Alpha pilot competition </a> to develop a high speed vision based flight control system. Several core technologies are developed to safely and efficiently finish drone racing task, including cascading PID controller, state estimation by visual inertial odometry, low latency object detection and structure from motion.
+    I supervised Team Deadlock (a team of 10 engineers) to participate in <a href="https://www.herox.com/alphapilot" target="_blank"> Alpha pilot competition </a> to develop a high speed vision based flight control system. Several core technologies are developed to safely and efficiently finish drone racing task, including cascading PID controller, state estimation by visual inertial odometry, low latency object detection and structure from motion. The code has been open-sourced <a href="https://github.com/randxie/alpha-pilot-team-deadlock" target="_blank"> here </a>.
   image: "alphapilot.png"
 - name: "Kaggle Competitions / Data Challenges"
   date: "2017"
