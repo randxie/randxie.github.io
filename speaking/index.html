@@ -12,7 +12,10 @@ nav_item: speaking
     <a href="{{ talk.links | map: 'url' | first }}" target="_blank" name="{{ talk.name | downcase | replace:' ','-' | remove:',' }}">
       <h2>{{ talk.name }}</h2>
     </a>  
+    {% if talk.embed_url == None %}
+    {% else %}
     {% include iframe.html url=talk.embed_url %}
+    {% endif %}
     <p>
       {{ talk.description }}
     </p>
