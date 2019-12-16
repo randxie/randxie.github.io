@@ -34,7 +34,6 @@
   description: |
     I gave two lectures at Bittiger to guide students through basic procedures in a Kaggle competition. These two lectures focused on analyzing time series data,
     specifically multi-channel EEG signals. The target is to extract features from EEG signals that can be used to predict seizure.
-  embed_url: "https://www.bittiger.io/livecourses/q3zHa7ALACu3EEaKT"
   links:
     - label: "Slides-Part_1"
       url: "https://docs.google.com/presentation/d/1SE9C6Bb1DtKA_a6PpSTwxkhmVGC5TGk7Qpr4RsnHdmE/edit?usp=sharing"
@@ -47,7 +46,6 @@
     I presented my master research "model-based human neuromuscular (NMS) system monitoring" on an industry advisory 
     board meeting organized by center of Intelligent Maintenance Systems. This research tries to build up
     linkage between time frequency features extracted from biomedical system and system dynamics.
-  embed_url: "http://www.imscenter.net/"
   links:
     - label: "Slides"
       url: "https://docs.google.com/presentation/d/1OAT8x31fZBdlrd72egAnPbnHUd7h0tUYwS8QxTIsDnA/edit?usp=sharing"

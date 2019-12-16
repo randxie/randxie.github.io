@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Draft] Deep learning in data mining Kaggle competitions"
+title: "Deep learning in Kaggle's tabular data competitions"
 tags:
 - Kaggle
 - Data Science
@@ -60,9 +60,12 @@ The rest of MJ's solution is quite standard. The hidden layers in DAE are used a
 <br />
 ### Sparse Multilayer Perceptron (MLP)
 
+It's nothing but a multilayer perceptron with sparse input. I also participate in the Mercari price competition and our team uses ~2000 lines of code to do feature engineering and optimize the speed to fit in 1 hr training time constraints. But the sparse MLP only uses <a href="https://www.kaggle.com/lopuhin/mercari-golf-0-3875-cv-in-75-loc-1900-s" target="_blank">83 lines of code</a> and win the 1st place!!
+
 
 <br />
 ### Wavenet-like Time Series Network
 
+sjv is my favorite Kaggler because he always bring inspiring solutions. I believe he is the first one who uses wavenet for time series forecasting. For more technical details, see <a href="https://github.com/sjvasquez/web-traffic-forecasting" target="_blank"> sjv's github repo </a> 
 
 
