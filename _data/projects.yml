@@ -14,7 +14,7 @@
 - name: "DelTron AIoT Platform"
   date: "2019"
   description: |
-    I work as the Chief Cloud Architect of <a href="https://www.deltron.tech/english/deltron" target="_blank"> DelTron Intelligence Technology </a> to help them build a cloud AIoT platform.
+    I worked as the Chief Cloud Architect of <a href="https://www.deltron.tech/english/deltron" target="_blank"> DelTron Intelligence Technology </a>  to design and build Deltron's cloud AIoT platform from scratch. The platform has been in production to support N machines sending o(10)*N QPS predictions back to cloud.
   image: "deltron.png"
 - name: "Alpha Pilot - Team Deadlock"
   date: "2019"
