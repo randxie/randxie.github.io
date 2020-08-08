@@ -203,7 +203,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (= 127)
-  jekyll-redirect-from
 
 BUNDLED WITH
    2.1.4
