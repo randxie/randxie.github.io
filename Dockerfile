@@ -1,11 +1,11 @@
-FROM gliderlabs/alpine:3.5
+FROM gliderlabs/alpine
 MAINTAINER Rand Xie
 
 # Install all the dependencies for Jekyll
 RUN apk-install bash build-base git libffi-dev zlib-dev libxml2-dev libxslt-dev nodejs ruby-dev ruby
 
 # Install Jekyll
-RUN gem install bundler jekyll --no-ri
+RUN gem install bundler:1.16.1 jekyll --no-ri
 # RUN gem install kramdown
 
 # Install nokogiri separately because it's special
@@ -16,7 +16,8 @@ RUN gem install nokogiri  --no-ri
 WORKDIR /tmp
 ADD Gemfile Gemfile
 ADD Gemfile.lock Gemfile.lock
-RUN bundle install
+RUN bundle update github-pages
+RUN bundle install --full-index
 
 # Copy source
 RUN mkdir -p /src
