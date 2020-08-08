@@ -61,6 +61,8 @@ sass:
 highlighter: rouge
 timezone: 'America/Los_Angeles'
 markdown: kramdown
+kramdown:
+    math_engine: katex
 
 disqus:
   shortname: randxie

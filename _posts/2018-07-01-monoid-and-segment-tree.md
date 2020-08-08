@@ -39,9 +39,9 @@ object Monoid {
 ---
 {% include figure.html path="blog/monoid-segment-tree/segment-tree.jpg" alt="Segment Tree" %}
 
-A segment tree is a data structure enabling us to query and update partial sum quickly. The speed-up is achieved by recursively computing partial sum of the left half elements and the right half elements in an array. By using such struture, updating an element does not require us to re-compute all the partial sums. As a result, segment tree has query and update complexity as $$ o(log n) $$. A detailed description can be found <a href="https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/" target="_blank">here</a>.  
+A segment tree is a data structure enabling us to query and update partial sum quickly. The speed-up is achieved by recursively computing partial sum of the left half elements and the right half elements in an array. By using such struture, updating an element does not require us to re-compute all the partial sums. As a result, segment tree has query and update complexity as $ o(log n) $. A detailed description can be found <a href="https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/" target="_blank">here</a>.  
 
-However, this is not the end of the story. If we extend the concept of partial sum as $$ \sum_{i=m}^{n} {e_i} = e_{m} * e_{m+1} * ... * e_{n} $$, where $$ * $$ is the associative binary operation. Futhermore, we can define an Identity element $$ I \rightarrow I * e_i = e_i * I = e_i $$. We might notice that segment tree can be applied to quickly query and update *partial sum* of any Monoid.
+However, this is not the end of the story. If we extend the concept of partial sum as $ \sum_{i=m}^{n} {e_i} = e_{m} * e_{m+1} * ... * e_{n} $, where $ * $ is the associative binary operation. Futhermore, we can define an Identity element $ I \rightarrow I * e_i = e_i * I = e_i $. We might notice that segment tree can be applied to quickly query and update *partial sum* of any Monoid.
 
 <br />
 ### Scala Implementation
@@ -169,9 +169,9 @@ object TestSegmentTree {
 ```
 
 ---
-Now, let us ask the last question: if you want to perserve the partial max, e.g. given $$ m,n $$, return $$ max(e_m, e_{m+1}, ..., e_{n})$$, where do you need to modify in the code? 
+Now, let us ask the last question: if you want to perserve the partial max, e.g. given $ m,n $, return $ max(e_m, e_{m+1}, ..., e_{n})$, where do you need to modify in the code? 
 
-Again, we can verify that maximum operation is associative binary operation and there is an Identity element $$ I = -inf \rightarrow max(I, e_i) = e_i $$. Therefore, we just need to modify the Monoid definition as following:
+Again, we can verify that maximum operation is associative binary operation and there is an Identity element $ I = -inf \rightarrow max(I, e_i) = e_i $. Therefore, we just need to modify the Monoid definition as following:
 
 ```scala
 object Monoid {

@@ -30,9 +30,7 @@ competition and <a href="https://github.com/sjvasquez/web-traffic-forecasting" t
 ### Denoise Auto-Encoder (DAE)
 ---
 My first impression of DAE comes paper "Stacked Denoising Autoencoders_ Learning Useful Representations in a Deep Network with a Local Denoising Criterion". Instead of learning a compact representation of the original data, DAE adds noise to the original data and trains a network that is capable of recovering original data. With DAE, the hidden layer could have a dimension larger than the original data. Mathematically, we try to train a network that performs 
-$$
-f(x+\epsilon) = x
-$$
+$ f(x+\epsilon) = x $
 
 One challenge on applying DAE to tabular data is the noise creation process, especially the existence of categorical variables. In the original post, the winner Michael Jahrer (MJ) presented a method called "swap noise" that randomly swap a small portion of columns between two samples to create the noisy samples used for training. Here is my implementation of swap noise for your reference.
 

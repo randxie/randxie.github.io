@@ -25,11 +25,11 @@ The paper can be roughly splitted into 4 parts: modeling, feature engineering, s
 
 The search retrieval is formulated as recall optmization problem that optimizes top K recall: 
 
-$$ recall@K = \frac{\sum_{i=1}^{K} d_i \in T}{N}$$, where  $$ d_i $$ represents the top K retrived documents.
+$ recall@K = \frac{\sum_{i=1}^{K} d_i \in T}{N} $, where  $ d_i $ represents the top K retrived documents.
 
 As the metric can not be optimized directly, triplet loss is used to maximize the margin between positive pair and negative pair, where triplet loss is defined as 
 
-$$ L = \sum_{i=1}^{N} max(0, D(q_i, d_{i}^{+}) - D(q_i, d_{i}^{-}) + m))) $$.
+$L = \sum_{i=1}^{N} max(0, D(q_i, d_{i}^{+}) - D(q_i, d_{i}^{-}) + m)))$.
 
 One thing that's mentioned is that the choice of margin can lead to 5 $\%$ to 10$\%$ recall variance.
 
