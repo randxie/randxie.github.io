@@ -5,12 +5,13 @@ baseurl: ""
 # Internal nav
 nav:
   main:
-    writing: "/writing"
+    writing/写作: "/writing"
     speaking: "/speaking"
     projects: "/projects"
   writing:
     all: "/writing"
-    popular: "/writing/popular"
+    english: "/writing/english"
+    中文: "/writing/chinese"
     tags: "/writing/tags"
 
 # Bio settings
@@ -34,7 +35,7 @@ contact_urls:
     label: "Kaggle"
     icon: "coffee"
   zhihu:
-    url: "https://www.zhihu.com/people/xiao-yu-22-71-20/answers"
+    url: "https://www.zhihu.com/people/randxie/answers"
     label: "Zhihu"
     icon: "book"
   github:

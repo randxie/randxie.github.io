@@ -6,6 +6,7 @@ tags:
 - Data Science
 - Deep Learning
 thumbnail_path: "blog/dl-kaggle-competitions/neural-network.jpg"
+add_to_english_list: true
 ---
 
 In the recent years, deep neural networks have been standard tools for computation vision competitions. However, for traditional data mining competitions

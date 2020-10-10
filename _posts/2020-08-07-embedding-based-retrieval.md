@@ -6,6 +6,7 @@ tags:
 - Search
 - Facebook
 thumbnail_path: "blog/embedding-based-retrieval/word_embeddings.jpg"
+add_to_english_list: true
 ---
 
 Facebook recently published a paper [embedding based retrieval in Facebook search](https://arxiv.org/pdf/2006.11632.pdf) to discuss how they use embeddings in FB's search system. In this post, I will go into the details and outline my major findings.

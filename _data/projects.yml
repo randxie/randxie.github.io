@@ -4,6 +4,7 @@
     In my spare time, I make contribution to open source projects. Here are the collection of projects I had contributed to: <br>
     <ul type="square">
       <li> <a href="https://github.com/randxie/mmdetection-tvm" target="_blank"> mmdetection-tvm </li>
+      <li> <a href="https://github.com/randxie/python-extension-example" target="_blank"> mmdetection-tvm </li>
       <li> <a href="https://github.com/randxie/kaggle-pipeline" target="_blank"> kaggle-pipeline </li>
       <li> <a href="https://github.com/randxie/alpha-pilot-team-deadlock" target="_blank"> alpha-pilot-team-deadlock </li>
       <li> <a href="https://github.com/aksnzhy/xlearn" target="_blank"> xlearn </a> </li>
@@ -14,7 +15,8 @@
 - name: "DelTron AIoT Platform"
   date: "2019"
   description: |
-    I worked as the Chief Cloud Architect of <a href="https://www.deltron.tech/english/deltron" target="_blank"> DelTron Intelligence Technology </a>  to design and build Deltron's cloud AIoT platform from scratch. The platform has been in production to support N machines sending o(10)*N QPS predictions back to cloud.
+    I worked as the Chief Cloud Architect of <a href="https://www.deltron.tech/english/deltron" target="_blank"> DelTron Intelligence Technology </a>  to design and build Deltron's cloud AIoT platform from scratch. 
+    The platform has been in production to support N machines sending o(10)*N QPS predictions back to cloud.
   image: "deltron.png"
 - name: "Alpha Pilot - Team Deadlock"
   date: "2019"

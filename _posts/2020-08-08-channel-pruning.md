@@ -6,6 +6,7 @@ tags:
 - Deployment
 - Model Compression
 thumbnail_path: "blog/channel-pruning/channel-pruning.png"
+add_to_english_list: true
 ---
 
 Deploying vision models to embedded system has a lot of constraints, e.g. inference speed, memory consumption. These constraints are often not imposed during the training time. In addition, it's often that different people are in charge of model training and model deployment. Therefore, it's important to be able to optimize the model speed or memory consumption after training. In this post, I will go over the paper ["Channel Pruning for Accelerating Very Deep Neural Networks"](https://arxiv.org/pdf/1707.06168.pdf), and discuss some techniques to improve model inference speed.

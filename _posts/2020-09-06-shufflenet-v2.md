@@ -5,6 +5,7 @@ tags:
 - ShuffleNet V2
 - Efficient Neural Network
 thumbnail_path: "blog/shufflenet-v2/shufflenet-v2.jpg"
+add_to_english_list: true
 ---
 
 Recently, I am reseaching on how to improve model inference speed on edge device (specifically Jetson Nano). The target is to minimize latency under limited computation power. Here's [the spec for Jetson Nano](https://developer.nvidia.com/embedded/develop/hardware), where the peak performance is 472 GFLOPs.

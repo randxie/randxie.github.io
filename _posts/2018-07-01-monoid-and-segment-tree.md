@@ -6,6 +6,7 @@ tags:
 - Data Structure
 - Abstract Algebra
 thumbnail_path: "blog/monoid-segment-tree/segment-tree.jpg"
+add_to_english_list: true
 ---
 
 Recently, I start to learn Scala. As previously trained as an object-oriented programmer，I was not very comfortable with the functional way of thinking. After reading more materials, I start to appreciate the beauty of funtional programming. The way towards abstraction in functional programming enables me to view programming in another way. In this article, I would like to share my attempt to use the concept of Monoid for Segment Tree implementation. This idea is inspired by <a href="https://www.zhihu.com/question/54746883/answer/152084219" target="_blank">a zhihu answer posted by Bolyn Su</a> and <a href="http://hongjiang.info/scala/" target="_blank">Scala tutorials written by hongjiang</a>.
