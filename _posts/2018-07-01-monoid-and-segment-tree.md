@@ -184,4 +184,4 @@ object Monoid {
 }
 ```
 
-To see the full version of code, please refer to <a href="https://github.com/randxie/machine-learning-practice/blob/master/data_structure/FunctionalSegmentTree.scala" target="_blank">this page</a>.
+To see the full version of code, please refer to <a href="https://github.com/randxie/code-for-my-blog/blob/main/monoid-segment-tree/segment_tree.scala" target="_blank">this page</a>.
