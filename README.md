@@ -6,6 +6,14 @@ This is the code for the [Rand Xie Home Page](randxie.github.io). Most component
 
 This code is released under the MIT License. See LICENSE.txt.
 
+## Installation
+
+### Ruby
+
+```
+sudo snap install ruby --channel=2.4/stable --classic
+```
+
 ## How to run the code
 
 1. Run ```bundle install```.

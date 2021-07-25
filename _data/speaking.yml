@@ -1,3 +1,11 @@
+- name: "[Coming soon] How Robinhood Built a Feature Store Using Feast"
+  date: "Aug 11, 2021"
+  description: |
+    In this talk, I will share the lessons learned from how Robinhood built a feature store from Feast.
+  links:
+    - label: "Website"
+      url: "https://www.applyconf.com/"
+
 - name: "Model Explainability"
   date: "Apr 10, 2019"
   description: |
