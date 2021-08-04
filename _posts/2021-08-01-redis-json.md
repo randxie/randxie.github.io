@@ -1,0 +1,28 @@
+---
+layout: post
+title: "RedisJson Introduction"
+tags:
+- Json
+- Redis
+- RedisJson
+thumbnail_path: "blog/redis-json/rejson-tree.png"
+add_to_english_list: true
+---
+
+In this blog, I am going to introduce [RedisJson](https://github.com/RedisJSON/RedisJSON), a library written in Rust to allow you directly manupulate json (nested struct data) in Redis.
+
+Before discussing the implementation detail of RedisJson, let's revisit why it's not straightforward to manipulate JSON objects in Redis. As we know Redis provides a high performance in-memory key-value store, it means you can fetch key in low latency, and the values are bytes. In order to store JSON objects in Redis, you will need to serialize the json to bytes and store that as value. If you want to modify a field in the JSON object, you will need to read the value out, deserialize, update the value, then serialize to bytes and finally write it back to Redis. An alternative is to use hmap in Redis. It allows you modify the first layer of the JSON objects independently. But it will be the same if you have a complicated nested object.
+
+If you want to write a server for managing these JSON objects (for example, a configuration server), there are more considerations. A typical consideration is to guarantee atomicity when modifying a field, which means you will need to implement read-modify-write properly.
+
+RedisJson provides a better solution to store JSON objects inside Redis, by converting the JSON object into a tree.
+
+{% include figure.html path="blog/redis-json/rejson-tree.png" alt="NumericRange" %}
+
+The tree is stored as a custom Redis value type called "ReJSON-RL". RedisJson implements new set of commands that can interact with this custom value type. The whole lib can be loaded as a custom module.
+
+To summarize, if you need to store complex objects into memory for fast retrieval / update, you can consider using RedisJson to support it. I can see its potential in building a config server and simplify the server logic to manage many configs.
+
+Reference:
+
+1. [RedisJson: A Redis JSON Store](https://redislabs.com/blog/redis-as-a-json-store/)
