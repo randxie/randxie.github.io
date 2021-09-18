@@ -8,6 +8,8 @@
       url: "https://youtu.be/pMFbRJ7AnBk?t=3926"
     - label: "Website"
       url: "https://www.applyconf.com/"
+    - label: "Slides"
+      url: "https://docs.google.com/presentation/d/1zx5JT0V2hIrk_fJGJ59YCOCOPsb7DmYNx2NFFXfuF0s/edit?usp=sharing"
 
 - name: "Model Explainability"
   date: "Apr 10, 2019"
@@ -17,6 +19,8 @@
   links:
     - label: "Video"
       url: "https://www.youtube.com/watch?v=uwGs3pOJ1M4"
+    - label: "Slides"
+      url: "https://docs.google.com/presentation/d/1IGMZdcDchPIQAnUHRaGYf_OfUxyQuVeI8exPdZ-0OiM/edit?usp=sharing"
 
 - name: "How to participate in Kaggle competitions"
   date: "June 28, 2017"
