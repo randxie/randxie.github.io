@@ -1,0 +1,27 @@
+---
+layout: post
+title: "The missing piece in model serving - Materialized View Definitions"
+tags:
+- Materialized View
+- Feature Engineering
+- Model Serving
+- Machine Learning
+thumbnail_path: "blog/materialize/pipeline-graph.png"
+add_to_english_list: true
+---
+
+Recently, I read a blog post named ["A Data Pipeline is a Materialized View"](https://nchammas.com/writing/data-pipeline-materialized-view). The viewpoint perfectly aligns with an internal project I am proposing to unify feature generation and serving between training and serving. Therefore, I would like to share some of my recent thinking on feature engineering in real-time ML systems.
+
+For real-time machine learning applications, it's very important to get the feature values right. Depending on the freshness requirements, we usually have both batch system to compute low freshness features ($T-1$) and streaming system to get high freshness features ($o(seconds)$). Then, the feature values from two systems are joined together and supplied into a ML model. 
+
+For online model serving, the features are stored in a low-latency storage, e.g. Redis, Dynamo, MySQL, Postgres, ...Using the terminology in the above mentioned blog, you are storing the materialized view with different freshenss requirement that can be retrieved in low latency.
+
+However, the storage aspect is not often captured in the ML frameworks and adding challenges to bring models from offline to online, as offline storage are usually different from online storage, where offline storage often optimize for training throughput and online storage optimizes for latency. 
+
+Let's take tensorflow to give a concrete example, you can specify the input sources from batch storage like HDFS or S3, then define the compute graph. Within the compute graph, you can define stateless feature transform like OneHotEncode, Normalize. At the serving time, you assume the inputs will be provided to the model magically then prediction results are returned.
+
+However, the reality is much more complicated. Getting the input features in both training and serving can be very tricky, due to the different freshness requirements in the features. In addition, you want materialized views in different timestamps between training and serving to prevent future data leakage. 
+
+To solve this problem, you should capture how the features are generated. It's basically a feature graph where you can trace which data sources the feature comes from and how the features are materialized. With such high level abstraction, then you can build up the execution engine to generate features in both training and serving time. 
+
+Internally, I am incubating a project to provide such abstraction and hopefully I can make it work then open source it.
