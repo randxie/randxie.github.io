@@ -8,7 +8,7 @@ thumbnail_path: "blog/general/staff-eng-challenging-time.png"
 add_to_english_list: true
 ---
 
-The recent changes in macroeconomics have impacted a lot of companies. For the online brokerage company I worked at, it has been impacted even more, both by the downward economic cycle and SEC's discussions on routing retail stock orders to auctions. As a staff engineer in the team, I am responsible to figure out the technical directions for the next halves. In such challenging time, the decision making principles will be very different. In this blog, I would like to document the principles that help me making technical decisions in the challenging time, that can help me retrospect in the future.
+The recent changes in macroeconomics have impacted a lot of companies. For the online brokerage company I worked at, it has been impacted even more, both by the downward economic cycle and SEC's discussions on routing retail stock orders to auctions. As a staff engineer in the team, I am responsible for figuring out the technical directions. In the challenging time, the decision making principles will be very different. In this blog, I would like to document the principles that help me navigate the challenging time.
 
 1) Be resilient to changes and plan for shorter term
 
