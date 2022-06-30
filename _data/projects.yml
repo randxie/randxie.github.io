@@ -18,6 +18,12 @@
             </ul>
           </li>
           <li> 
+            <a href="https://github.com/randxie/emscripten-vision-react-example" target="_blank"> emscripten-vision-react-example </a>
+            <ul>
+              <li> Provide an example that uses emscripten to compiler OpenCV C++ code to wasm, then process images in a React app with the generated wasm. </li>
+            </ul>
+          </li>
+          <li> 
             <a href="https://github.com/randxie/react-pixel-annotation-tool" target="_blank"> react-pixel-annotation-tool </a>
             <ul>
               <li> Pixel annotation tool in React with watershed algorithm support. </li>
