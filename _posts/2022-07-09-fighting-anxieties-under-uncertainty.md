@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Fighting Anxieties in Uncertain Environment"
+tags:
+- Bear Market
+- Immigration
+- Life
+thumbnail_path: "blog/general/anxieties.jpg"
+add_to_english_list: true
+---
+
+As human-beings, we don't like uncertainty by nature, while life is fully of uncertainties. Over the last few months, my life is put into an extremely uncertain environment and I spent significant amount of effort to battle the generated anxiety. In this blog post, I would like to share my coping mechanisms developed during the process.
+
+### What happened?
+
+As an immigrant working in an online brokerage company, my life was highly impacted by the bear market. In the bear market, retail investors are less likely to trade frequently, that directly impacts the revenue of the company I am working in. With less revenue, the company is more likely to further reduce the number of employees to cut cost.
+
+For me, who's on employment-based green card process (EB2), my green card application is tied to my current employment. Unfortunately, my situation is trickier because my H1B 6 year cap is coming, and my priority date is almost current. For those who are not familiar with the green card process, it basically means that: If I can not file I-485 (the last step in green card application) in my current company (e.g. due to layoffs), I will need to leave United State. As my family and I has settled down in the US, we definitely want to stay longer. 
+
+The uncertainties come from the facts that I don't know when/whether my company will do another round of layoff, whether the layoff will impact me, and when my priority date becomes current (determined by USCIS). As you may expect, the uncertainties brought me a lot of anxieties. But I also realize that anxieties do not help and have directly affected my mental health. So I developed some coping mechanisms to reduce the energy needed to battle the anxiety from 50% of my daily energy amount to less than 20%.
+
+But I have to admit that it's easy said than done. Even today, I still need to spend 20% of my energy to battle the anxiety, not being able to fully ignore it.
+
+### Coping Mechanisms
+
+#### 1) Focus on what you can control
+
+One strategy that I adopted is to list out what I can control and what I can not control. For example, things that I can control include: I can get prepared for interviewing, I can spend effort to align my team's goal to the new company goal, I can keep shipping features, etc. What I can control is whether I will be laid off, and when my priority date becomes current.
+
+After writing down the list, I realized that the things I can control are way more than the things I can not control. It boosted my confidence to survive in the uncertain world.
+
+#### 2) Develop new hobbies
+
+Shifting focus is never a bad idea when you have anxiety. It's an effective way that helps me better utilize my energy. In the last few weeks, I started to take lessons in zero-knowledge proof and read computer vision papers (totally unrelated to my day-to-day work). By focusing on other things, the anxiety will go away in that period of time.
+
+#### 3) Share your feelings to family and friends
+
+Openly discussing your anxiety is a good way to relieve it. Getting support from family and friends helps me a lot during the process. But don't just use them as your emotional trashcan, make sure you also spend quality time with your family and friends.
+
+### Final Words
+
+It's a challenging time and the world is full of uncertainty. If you are facing similar anxiety, I hope my coping mechanisms can also help you reduce the anxiety.
