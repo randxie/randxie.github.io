@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Study Notes on Stanford CS149 - Assignment 3"
+title: "Learn Some CUDA by Stanford CS149 Assignment 3"
 tags:
 - GPU Programming
 - ML
