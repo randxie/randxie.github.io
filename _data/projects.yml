@@ -6,12 +6,6 @@
       <li> Main Contributor </li>
         <ul>
           <li> 
-            <a href="https://github.com/randxie/mmdetection-tvm" target="_blank"> mmdetection-tvm </a>
-            <ul>
-              <li> Convert mmdetection models to TVM IR for optimization. </li>
-            </ul>
-          </li>
-          <li> 
             <a href="https://github.com/randxie/python-extension-example" target="_blank"> python-extension-example </a>
             <ul>
               <li> Provide an example on how Python can interop with C++ code for vision application. </li>
@@ -20,7 +14,13 @@
           <li> 
             <a href="https://github.com/randxie/emscripten-vision-react-example" target="_blank"> emscripten-vision-react-example </a>
             <ul>
-              <li> Provide an example that uses emscripten to compiler OpenCV C++ code to wasm, then process images in a React app with the generated wasm. </li>
+              <li> Provide an example that uses emscripten to compile OpenCV C++ code to wasm, then process images in a React app with the generated wasm. </li>
+            </ul>
+          </li>
+          <li> 
+            <a href="https://github.com/randxie/mmdetection-tvm" target="_blank"> mmdetection-tvm </a>
+            <ul>
+              <li> Convert mmdetection models to TVM IR for optimization. </li>
             </ul>
           </li>
           <li> 
