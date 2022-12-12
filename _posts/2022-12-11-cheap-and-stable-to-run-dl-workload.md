@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Cheap and Stable Way to run DL workload on GCP"
+title: "Cheap and Stable Way to run DL workload"
 tags:
-- GCP
 - DLVM
 - GPU
-thumbnail_path: "blog/general/gcp-logo.png"
+- Low Cost
+thumbnail_path: "blog/general/gpu-training.png"
 add_to_english_list: true
 ---
 
