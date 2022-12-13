@@ -9,11 +9,11 @@ thumbnail_path: "blog/general/gpu-training.png"
 add_to_english_list: true
 ---
 
-Recently, I started to get very obsessed with stable diffusion. In order to work with large DL models, you certainly need GPU resources. In this blog post, I will share with you the cheapest and most stable way to run these DL models that I found. To decide what's the best way for you, firstly think about the usage pattern. And the metric is pretty simple: do you need to run DL training 7-24?
+Recently, I started to get very obsessed with stable diffusion. In order to work with large DL models, you certainly need GPU resources. In this blog post, I will share with you the cheapest and most stable way to run these DL models. To decide what's the best way for you, firstly think about the usage pattern. And the metric is pretty simple: do you need to run DL training 7-24?
 
 ## Solution for 7-24 Training
 
-Previously, I was a heavy Kaggle user that I participated in many competitions. Over that period, I run DL/ML trainings almost 7-24. If your usage pattern fits into this case, then building your own DL workstation is the most cost-effective. And that's what I did back in 2017:
+Previously, I was a heavy Kaggle user and I participated in many competitions. Over that period, I run DL/ML training almost 7-24. If your usage pattern fits into this case, then building your own DL workstation is the most cost-effective. And that's what I did back in 2017:
 
 * Find DL workstation hardware list in [PC partpicker](https://pcpartpicker.com/) based on your budge
 * Purchase all the hardware and assemble yourself
@@ -28,9 +28,9 @@ This is my DL workstation part list. The GPU is not included in the list and it'
 
 ## Solution for adhoc GPU training
 
-As I keep climbing the job laddar and my baby arrives, I don't have the luxury to run DL training 7-24. But I still want to spend 2 hours per day to explore latest DL research. And the same time, my GPUs are quite outdated, and I don't have the time to upgrade them (as it also involves upgrading the motherboard). To satisfy my adhoc DL training need, I have explored multiple solutions, including:
+As I keep climbing the career laddar and my baby arrives, I don't have the luxury to run DL training 7-24. But I still want to spend 2 hours per day to explore latest DL research. At the same time, my GPUs are quite outdated, and I don't have the time to upgrade them, as it also involves upgrading the motherboard and power supply. To satisfy my adhoc DL training need, I have explored multiple solutions, including:
 
-* Colab membership (gives you a T4 for 50 hours or A100 for 10 hours.)
+* Colab Pro membership (gives you a T4 for 50+ hours or A100 for 10+ hours.)
 * Small GPU rental providers like Lambda GPU cloud or Vast.ai.
 * GCP DLVM solution
 
@@ -52,7 +52,7 @@ Cons:
 
 #### Lambda GPU cloud or Vast.ai
 
-I did not make this path to work. In general, the small GPU rental vendors have worse UI and usability compared to cloud providers like GCP or AWS. They also do not have much price advantages compared to Cloud providers' spot instances. For Vast.ai, if you want to get similar price as GCP's spot instance, you need to use their bidding model that's hard to reason about.
+I did not make this path to work. In general, these small GPU rental vendors have worse UI and usability compared to cloud providers like GCP or AWS. They also do not have much price advantages compared to Cloud providers' spot instances. For Vast.ai, if you want to get similar price as GCP's spot instance, you need to use their bidding model that's hard to reason about.
 
 #### [Preferred] GCP DLVM
 
@@ -69,6 +69,7 @@ Cons:
 * Need to apply for quotas to run T4/A100 instances.
 
 As you can tell, the pros are very obvious for the GCP DLVM solutions, both in terms of cost, development experience and usability. Just two small tips if you decided to go with this path:
+
 1. Make sure you selected the spot instance, the cost saving is significant
 2. Make sure you use DLVMs to save you the effort to install conda, nvidia-driver, pytorch, etc.
 
