@@ -21,7 +21,7 @@ One area where I believe AI can have a significant impact is in education. By le
 
 But to make this future a reality, we must be willing to embrace a multidisciplinary approach that combines expertise from all fields. Science, engineering, and product development are becoming increasingly intertwined, and we must recognize that for AI technologies like GPT4, they are almost the same thing.
 
-For me, this means pursuing a multi-10-year vision that combines AI and robotics, allowing us to connect GPT4 with the atom world. By doing so, AI will be able to sense and engineering the real world. A small target will be embedding Large Language Model (LLM) to [Boston Dynamics' Spot](https://www.bostondynamics.com/products/spot), with inputs more than text and image.
+For me, this means pursuing a multi-10-year vision that combines AI and robotics, allowing us to connect GPT4 with the atom world. By doing so, AI will be able to sense and engineer the real world. A small target will be embedding Large Language Model (LLM) to [Boston Dynamics' Spot](https://www.bostondynamics.com/products/spot), with inputs more than text and image.
 
 ## Final thoughts
 
