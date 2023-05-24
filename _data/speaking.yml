@@ -1,3 +1,14 @@
+- name: "The Evolution of Robinhood Markets's Feature Store - Beast"
+  date: "May 23, 2023"
+  description: |
+    In this talk, we shared the lessons learned in the evolution of Robinhood Market's Feature Store.
+  embed_url: "//www.youtube.com/embed/qDtdYo-dVXk"
+  links:
+    - label: "Video"
+      url: "https://www.youtube.com/watch?v=qDtdYo-dVXk"
+    - label: "Slides"
+      url: "https://drive.google.com/drive/u/0/folders/108whFLC7RyOf52lm9uvmX-FXlbiZttIe"
+
 - name: "How Robinhood Built a Feature Store Using Feast"
   date: "Aug 11, 2021"
   description: |
