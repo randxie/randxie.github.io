@@ -7,7 +7,7 @@
     - label: "Video"
       url: "https://www.youtube.com/watch?v=qDtdYo-dVXk"
     - label: "Slides"
-      url: "https://drive.google.com/drive/u/0/folders/108whFLC7RyOf52lm9uvmX-FXlbiZttIe"
+      url: "https://drive.google.com/file/d/1PVRlBJk3ekknud2tyUacOH6y5N97z3i_/view"
 
 - name: "How Robinhood Built a Feature Store Using Feast"
   date: "Aug 11, 2021"
