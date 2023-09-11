@@ -44,6 +44,7 @@ export async function generateMetadata({
     imageList = typeof post.images === 'string' ? [post.images] : post.images
   }
   const ogImages = imageList.map((img) => {
+    console.log(img)
     return {
       url: img.includes('http') ? img : siteMetadata.siteUrl + img,
     }

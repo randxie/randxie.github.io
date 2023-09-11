@@ -1,21 +1,20 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Rand Xie Blog',
+  title: 'Rand Xie',
   author: 'Rand Xie',
-  headerTitle: 'Rand Xie Blog',
+  headerTitle: 'Rand Xie',
   description: 'The life of a programmer, amateur researcher and philosopher.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://randxie.github.io',
   siteRepo: 'https://github.com/randxie/randxie.github.io',
-  siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  email: 'randxiexyy29@gmail.com',
+  github: 'https://github.com/randxie',
+  twitter: 'https://twitter.com/Randxie29',
+  linkedin: 'https://www.linkedin.com/in/yuyang-rand-xie-48489639/',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
