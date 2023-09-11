@@ -7,13 +7,13 @@ draft: false
 
 Recently, I am reseaching on how to improve model inference speed on edge device (specifically Jetson Nano). The target is to minimize latency under limited computation power. Here's [the spec for Jetson Nano](https://developer.nvidia.com/embedded/develop/hardware), where the peak performance is 472 GFLOPs.
 
-[JetonNanoSpec](/static/images/blog/shufflenet-v2/jetson-nano-spec.png)
+![JetonNanoSpec](/static/images/blog/shufflenet-v2/jetson-nano-spec.png)
 
 As I continue to optimize the inference speed, I realize that FLOPs is not the only factor affecting the latency and this assumption is confirmed by the paper [ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf). In this post, I will outline a few learning from this paper.
 
 ### FLOPs is an indirect metric, there's more to consider
 
-[JetonNanoSpec](/static/images/blog/shufflenet-v2/comparison.png)
+![comparison](/static/images/blog/shufflenet-v2/comparison.png)
 
 The paper evaluates batches/sec for different network under different FLOPs. Here's what I read from the comparison:
 

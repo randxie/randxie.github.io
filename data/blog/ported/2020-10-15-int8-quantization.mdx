@@ -9,11 +9,11 @@ Reducing serving latencies on edge devices have always been a popular topic for 
 
 One big challenge for representing weights using lower precision is the smaller numerical range an INT8 can represent, as shown below:
 
-[NumericRange](/static/images/blog/int8-quantization/numeric_number_range.png)
+![NumericRange](/static/images/blog/int8-quantization/numeric_number_range.png)
 
 Luckily, neural networks' weights do not require the full range. For example, here's the weight distribution of efficientnet ([script to plot](https://github.com/randxie/code-for-my-blog/blob/main/edge-ml/plot_efficientnet_weight_distribution.py))
 
-[WeightDistribution](/static/images/blog/int8-quantization/weight_distribution.png)
+![WeightDistribution](/static/images/blog/int8-quantization/weight_distribution.png)
 
 As we can see, the maximum absolute weigth value is less than 20, and most values are concentrated around 0. In other words, we don't need the full numerical range of float to represent neural network weights. To quantize weights, we will create a mapping from INT8 to float32:
 
@@ -27,11 +27,11 @@ When talked about quantization techniques, we can generally categorize them into
 
 Post training quantization uses a calibration dataset to compute the quantization factors (scaling factor and zero point). It does not require re-training and is easier to integrate into the original ML workflow. TensorRT adopts post training quantization to compute quantization factors for each layer, and uses KL divergence as the optimization metric. The below table shows accuracy drop with INT8 quantization.
 
-[AccuracyDrop](/static/images/blog/int8-quantization/accuracy_drop_with_quantization.png)
+![AccuracyDrop](/static/images/blog/int8-quantization/accuracy_drop_with_quantization.png)
 
 Quantization aware training, as its name suggesting, tries to quantize the weight during training. As expected, it's more invasive to the original training pipeline. On the other hand, we can expect less accuracy drop. Tensorflow supports quantization aware training by placing quantization emulation operations [2]. 
 
-[TfQuantTrain](/static/images/blog/int8-quantization/tf_quant_train.png)
+![TfQuantTrain](/static/images/blog/int8-quantization/tf_quant_train.png)
 
 For more quantization techniques, the reference [3] is a good survey on neural network quantization. I would encourage researchers/engineers who are working on edge ML to take a look.
 

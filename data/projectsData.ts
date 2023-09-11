@@ -23,6 +23,12 @@ const projectsData = [
     imgSrc: '/static/images/projects/matlab.jpg',
     href: 'https://www.mathworks.com/products/predictive-maintenance.html',
   },
+  {
+    title: 'Building Actual Robots',
+    description: `When I was a mechanical engineer, I built a bunch of robots, including mobile robots, CNC and model aircraft`,
+    imgSrc: '/static/images/projects/robot.jpg',
+    href: '/blog/ported/2014-06-01-list-of-robots',
+  },
 ]
 
 export default projectsData

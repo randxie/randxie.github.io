@@ -11,7 +11,7 @@ If we look deeper into tree models, we are basically trying to optimize a bunch 
 
 Now, the question is "can we push it even further"? The treelite paper [1] provides a viable path to further speed up the inference of a single tree. I have tested the treelite library in production and it gives $5x$ speedup to my XGBoost model (3000 trees and 8 max_depth), where the baseline is a naive xgboost model.predict call.
 
-[NumericRange](/static/images/blog/treelite/treelite-diagram.png)
+![treelite](/static/images/blog/treelite/treelite-diagram.png)
 
 Treelite is able to take tree models from different packages including XGBoost, LightGBM, scikit-learn to an intermediate representation. The intermediate representation filters out irrelevant information so the final saved model is also smaller. 
 
