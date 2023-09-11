@@ -1,0 +1,28 @@
+---
+title: "Learn Some CUDA by Stanford CS149 Assignment 3"
+tags:
+- GPU Programming
+- ML
+date: 2022-08-07
+draft: false
+---
+
+It's a study node for Stanford CS149. In particular, I read through some lecture notes to acquire the minimal knowledge that can solve [the assignment 3](https://github.com/stanford-cs149/asst3). In the blog post, I am going to share my learning experience.
+
+### Motivation
+
+As a machine learning engineer, I find myself using GPU a lot for training. However, I have never written CUDA programs before. To better understand GPUs' workload characteristics, I found this course [parallel computing](https://gfxcourses.stanford.edu/cs149/fall21/lecture/) offered as CS149 in Stanford. The assignment 3 gives us a sense of how CUDA programming looks like. Therefore, I spent two nights to finish the assignment 3.
+
+### Learnings
+
+To gain the required knowledge, I read through Lecture 4~9 that covers the basics of parallel computing. In particular, I learned about arithmetric intensity (a metric for measuring parallel program performance), and also some semantics that can be parallelized, including map, filter, reduce, scan. sort, group, etc. For my personal interest, I also read through Lecture 16 to see how image processing DSL (Halide) design looks like.
+
+The assignment 3 asks us to implement exclusive prefix sum in CUDA and a simple circle renderer. A skeleton code has been provided to save us extra work. The exclusive prefix sum took me more time to finish for a few reasons:
+
+1. I need to modify the Makefile so that it can run on my Nvidia 1080. Basically, we need to set LD_LIBRARY_PATH properly to link with cuda runtime libraries.
+2. My initial implementation returns wrong result when the array size N is larger than 1024. It turns out the std::pow inside CUDA kernel cast things to double. So the std::pow is inaccurate when N is larger than 1024.
+3. It takes time to learn basic CUDA concepts. The CUDA C Programming Guide is a good reference!
+
+Once the exclusive prefix sum is implemented correctly, I gained more experience in CUDA programming. The simple circle render only took me 1 hour to finish. Most of the time is spent on understanding the renderer program, and why atomicity and order affects the output. After reading through the code, I realize we can parallelize at pixel level, instead of circle level to guarantee atomicity and execution order. Swithcing the program to pixel level parallelism gives the correct result. However, I did not further optimize the program to also explore circle level parallelism within pixel level parallelism.
+
+To conclude, Stanford CS 149 is a great course with well-prepared materials to learn basic parallel computing. Since I am mostly interested in CUDA programming, the assignment 3 is sufficient to give you some taste of how GPU works. If you are a MLE who have not done CUDA programming before, I would encourage you to try the assignment 3.

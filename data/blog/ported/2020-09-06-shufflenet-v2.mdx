@@ -1,0 +1,36 @@
+---
+title: "ShuffleNet V2 - FLOPs can lie"
+tags: ["ShuffleNet V2", "Efficient Neural Network"]
+date: 2020-09-06
+draft: false
+---
+
+Recently, I am reseaching on how to improve model inference speed on edge device (specifically Jetson Nano). The target is to minimize latency under limited computation power. Here's [the spec for Jetson Nano](https://developer.nvidia.com/embedded/develop/hardware), where the peak performance is 472 GFLOPs.
+
+[JetonNanoSpec](/static/images/blog/shufflenet-v2/jetson-nano-spec.png)
+
+As I continue to optimize the inference speed, I realize that FLOPs is not the only factor affecting the latency and this assumption is confirmed by the paper [ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design](https://arxiv.org/pdf/1807.11164.pdf). In this post, I will outline a few learning from this paper.
+
+### FLOPs is an indirect metric, there's more to consider
+
+[JetonNanoSpec](/static/images/blog/shufflenet-v2/comparison.png)
+
+The paper evaluates batches/sec for different network under different FLOPs. Here's what I read from the comparison:
+
+* Networks with similar FLOPs can have quite different speeds. Therefore, it's not sufficient to evaluate computational complexity only based on FLOPs. 
+* FLOPs is positively correlated to the speed. For the same network, an increase in FLOPs will decrease batches per second.
+* The performance characteristics can vary a lot between GPU and CPU. Therefore, the deployed hardware plays an important role.
+
+Other important factors include:
+
+1. Memory access cost (MAC): this can be bottleneck on device with strong computing power like GPU. This's the reason why EfficientNet is not necessarily faster even though the FLOPs are greatly reduced.
+2. Degree of paralellism: for the same FLOPs, if the critical path is sequential, the performance can still be bad. A typical example is RNN.
+
+### Guide for efficient network design
+
+1. Equal channel width minimizes MAC
+2. Exccessive group convolution increases MAC
+3. Network framentation reduces degress of parallelism
+4. Element-wse operaions are non-negligible
+
+These guidelines aligns with the section "FLOPs is an indirect metric", as they take MAC and parallelism into account.

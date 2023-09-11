@@ -1,23 +1,47 @@
-.vscode
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
 
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
-node_modules
+# testing
+/coverage
 
-# Jekyll
-_site/
-.sass-cache/
+# next.js
+/.next/
+/out/
+public/sitemap.xml
+.vercel
 
-# OS X
+# production
+/build
+*.xml
+
+# rss feed
+/public/feed.xml
+
+# search
+/public/search.json
+
+# misc
 .DS_Store
-.AppleDouble
-.LSOverride
 
+# debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Vagrant
-.vagrant
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# IntelliJ
-*.iml
+# Contentlayer
+.contentlayer
