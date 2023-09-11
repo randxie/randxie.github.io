@@ -4,6 +4,8 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
+const isProd = process.env.NODE_ENV === 'production'
+
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
@@ -16,12 +18,15 @@ module.exports = () => {
       dirs: ['app', 'components', 'layouts', 'scripts'],
     },
     images: {
+      unoptimized: true,
       domains: ['picsum.photos'],
     },
     experimental: {
       appDir: true,
     },
     output: "export",
+    // Add basePath to serve static assets from GitHub Pages
+    assetPath: isProd ? 'https://randxie.github.io' : undefined,
     webpack: (config, options) => {
       config.module.rules.push({
         test: /\.svg$/,
