@@ -1,8 +1,0 @@
-web:  
-  build: .
-  volumes:
-    - .:/src
-  ports:
-    - "4000:4000"
-  environment:
-    - LIMIT_POSTS=5
