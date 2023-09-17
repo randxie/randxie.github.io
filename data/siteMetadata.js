@@ -14,6 +14,7 @@ const siteMetadata = {
   email: 'randxiexyy29@gmail.com',
   github: 'https://github.com/randxie',
   twitter: 'https://twitter.com/Randxie29',
+  zhihu: 'https://www.zhihu.com/people/randxie',
   linkedin: 'https://www.linkedin.com/in/yuyang-rand-xie-48489639/',
   locale: 'en-US',
   analytics: {
