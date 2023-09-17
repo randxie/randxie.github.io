@@ -6,4 +6,5 @@ Template comes from https://github.com/timlrx/tailwind-nextjs-starter-blog
 
 1. `yarn install`
 2. `npm run start`
-3. `yarn next build`
+3. `yarn lint`
+4. `yarn next build`
