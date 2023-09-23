@@ -1,0 +1,46 @@
+---
+title: "Why Multi-Round Conversation UI is not the solution for LLM Based Dev Tools"
+tags: ["ChatGPT", "LLM"]
+date: 2023-09-22
+draft: false
+---
+
+After ChatGPT is launched, we started to see more and more tools have integrated GPT APIs to add "AI" functionalities. Meanwhile, tremendous dev tools are launched that wrapped around GPT APIs to serve as Copilots for X. These dev tools usually provide multi-round conversations as interface. Users will keep asking follow-up questions or providing additional guidance to get the results they want. For example, OpenAI just released their Dall-E-3 that allows users to edit the images using conversations.
+
+![DallE](/static/images/blog/ui/dall_e_ux_example.png)
+
+sqlchat is another example that provides multi-round conversation interface to help users generate SQL query that they want.
+
+![sqlchat](/static/images/blog/ui/sqlchat-ui.webp)
+
+So, what's wrong with multi-round conversations?
+
+Let's take one step back and think about why we need multi-round conversations in these products? Is it because chat interface is better than graphical interface? No!!
+In my opinion, the multi-round conversations are used to bridge the gap between vague natural language and accurate results users are looking for.
+
+To give a simple example, image you are repairing your house and asking a system to get you a screw driver
+
+```
+User: Give me the screw driver.
+System: Sure! Would you like a crosshead or a flathead?
+
+User: Crosshead, please.
+System: Alright, would you prefer a longer one or a shorter one?
+
+User: The longer one, please.
+System: Here you go!
+```
+
+The reason why there are multiple round of conversations is because languages are vague by nature. It takes more effort to make the language accurate. For the above scenario, you can express it more accurate without multi-round conversations:
+```
+User: Give me the longer crosshead screw driver
+System: Here you go!
+```
+
+For dev tools, we need more accurate generation results compared to tasks like creative writing. When the model is not able to generate accurate enough results, UI kicks in and helps with the generateion. If a tool takes fewer steps to adjust the vague natural language into accurate results users, it provides better user experience.
+
+Now, let me re-ask the question. Are multi-round conversations really the best interface for Dev Tools? My answer to this is "NO". For editing images, a well-designed image editors like photoshop can help you edit the pixels quicker. For editing SQL query, a code editor can be much quicker. 
+
+If you are designing a AI-native Dev Tool, keep in-mind that multi-round conversations may not provide the best UX. You should think careful what makes the most sense to your users, rather than just referecing what ChatGPT does.
+
+
