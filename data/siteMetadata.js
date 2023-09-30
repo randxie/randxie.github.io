@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Rand Xie',
   author: 'Rand Xie',
   headerTitle: 'Rand Xie',
-  description: 'The stories of a programmer, amateur researcher and philosopher.',
+  description: 'This blog captures stories of a programmer, amateur researcher and philosopher.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://randxie.github.io',
