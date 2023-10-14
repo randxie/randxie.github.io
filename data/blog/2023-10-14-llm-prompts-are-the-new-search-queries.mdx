@@ -1,0 +1,39 @@
+---
+title: "LLM Prompts are the New Search Queries"
+tags: ["LLM", "Prompt", "Search Query", "Search Engine"]
+date: 2023-10-14
+draft: false
+---
+
+In this blog post, I would like to explore the connections between LLM prompts and search queries, specifically, I want to explain why LLM prompts are the new search queries, and its implication.
+
+### Why LLM Prompts are the New Search Queries?
+
+**What is a LLM Prompt?**
+
+If you have used ChatGPT, a prompt is a valuable tool for instructing LLM to generate specific outputs. For instance, you can tailor a prompt to ask LLM to compose a poem, solve a math problem, write code, and more. Since LLM is trained on a vast amount of internet data, prompts serve as an effective means to tap into the knowledge stored within the model.
+
+**What is a Search Query?**
+
+A search query is a method by which you can direct a search engine to retrieve a collection of pertinent documents and then receive a ranked list of those documents. In order to obtain the desired information, it may be necessary to modify the search query based on the results. Similarly, in the LLM system, you will adjust the prompt to generate a new response.
+
+By now, you can probably observe the similarities between prompts and search queries. Both serve the purpose of retrieving relevant information based on the input provided. The discrepancy in the information obtained is a result of the different technological frameworks employed in LLM and search engines. From the perspective of the user providing information, we can consider LLM prompts as the new search queries.
+
+### Fair point, then what?
+
+Once we recognize the similarity between prompt and search query, a natural thought is that whether we can apply the techniques in search queries to adjust prompts, specifically [query rewrite](https://hughewilliams.com/2012/03/19/query-rewriting-in-search-engines/). When you search some text in Google, Google does not just search the text as it's. Instead, Google will rewrite/expand your query behind the scene, then combined the retrieved documents and rank them.
+
+Now, the question is: "can we do the same thing with prompt"? The answer is certainly yes!! If you read the DALL.E.3 report, you may notice OpenAI is already doing that
+
+![Dall-E-3-best-of-4](/static/images/blog/dall_e_3_prompt_example.png)
+
+From DALL.E 3's system card, we can see it more explicitly: ` GPT-4 will interface with the user in natural language, and will then synthesize
+the prompts that are sent directly to DALL·E 3. We have specifically tuned this integration such
+that when a user provides a relatively vague image request to GPT-4, GPT-4 will generate a more
+detailed prompt for DALL·E 3, filling in interesting details to generate a more compelling image`.
+
+From the screenshot, you may also notice there are 4 images generated. It's because sampling more prompts has higher likelihood of returning a image that matches with your expectations. And generating 4 images is a balance between cost and performance.
+
+### Closing
+
+The application of search engine techniques to LLM prompts is expected to increase in the near future. By combining these techniques with the new LLM compute paradigm, we can anticipate the development of even more powerful applications.
