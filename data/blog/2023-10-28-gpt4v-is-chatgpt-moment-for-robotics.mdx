@@ -1,0 +1,32 @@
+---
+title: "GPT-4V(ision): The True ChatGPT Moment for Robotics"
+tags: ["LLM", "ChatGPT", "Robotics", "GPT-4", "Vision"]
+date: 2023-10-28
+draft: false
+---
+
+![GPT-4V](/static/images/blog/gpt/l2r_overview.png)
+
+The launch of ChatGPT approximately one year ago sparked a lot of exploration into its potential use cases. One particular area that has captivated much attention and attracted significant funding is the application of LLM (Large Language Models) to Robotics. Combining the new capabilities existing in LLM with robotics holds the promise of ushering in a new era of general robots, which could become a reality in the next 10 years.
+
+As optimistic as we may be about the potential of large models in robotics, it's crucial to acknowledge the major obstacles that must be overcome along the way:
+
+1. Understanding the 3D World: For robots to operate effectively, they must possess the ability to understand the physical world, which is three-dimensional. This entails not only perceiving objects and their spatial relationships accurately but also comprehending the underlying laws of physics that govern their interactions. For example, **when grasping a cup, we would like to know the material of the cup before determining what control strategies should be applied**.
+
+2. Achieving Accurate Human-to-Robot Instruction Translation: Language serves as a bridge between humans and robots. However, ensuring that robot instructions accurately capture and reflect the intent of human commands is no trivial task. It's because human languages are vague, more toolings are needed to bridge the gap between inaccurate human language and accurate robot commands. We may need a **SQL-like language** for robots that's easy to validate.
+
+3. Ensuring Safety: One cannot understate the potential dangers posed by an out-of-control robot. As we embark on the path towards advanced robotics, robust safety measures must be in place to prevent accidents or harm to humans. Implementing fail-safe mechanisms and reliable control systems is of paramount importance.
+
+4. Enabling Efficient Edge Computing: In the realm of robotics, the ability to quickly adapt and respond to changing circumstances is crucial. To achieve this, robots must possess the capacity to rapidly re-plan their actions within the constraints of real-time execution. This demands efficient edge computing that empowers robots to make intelligent decisions while simultaneously executing their tasks.
+
+When considering the various challenges at hand, it appears that **the most uncertain aspect is our ability to comprehend the three-dimensional world**. Currently, we haven't achieved a vision system that matches the capabilities of the human eye. Many existing vision models are only capable of performing limited tasks such as classification, detection, and segmentation. Although there are works like Segment Anything that allow for customization in segmentation using prompts, these systems are still far from possessing the flexibility of human vision and fall short in understanding the nuances of the 3D world.
+
+In terms of human-to-robot translation, we may have a clearer path forward, given the impressive coding capabilities demonstrated by ChatGPT. Other aspects like ensuring safety and efficient edge computing are matters that can be tackled at a later stage, once the underlying technology has been thoroughly verified.
+
+After the launch of GPT-4V(ision), my confidence in building general robots has significantly increased. Here's an example that I tried today:
+
+![GPT-4V](/static/images/blog/gpt/Cups-and-Their-Contents.png)
+
+It is evident that GPT-4V possesses not only the ability to determine the number of cups present, but also the capability to provide detailed descriptions of the contents within those cups. Such information can be valuable for informing robot control strategies. There are certainly many failure cases that I did not show here. But I am still impressed by the "emergent" capability that I have seen in the "traditional" vision model. 
+
+More recently, we also start to see Boston Dynamics ([video link](https://www.youtube.com/watch?v=djzOBZUFzTw)) has started to try out GPT-4V technologies on their Spot robot. If GPT-4V can maintain the rate of improvement, it's very likely we can see robotcs that can help you do all the housework soon.
