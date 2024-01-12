@@ -7,7 +7,7 @@ draft: false
 
 The more I use ChatGPT, the more I can feel the boost in learning efficiency. This blog is written by human but ChatGPT was used extensively to learn the concept of sampling. Now let's get into the topic - Sampling.
 
-Why are we interested in sampling? You might have heard Langevin Dynamics in the score based generative modeling. But what the hell is Langevin Dynamics? Why do we need that? In this blog post, I will use mixture of gaussians distribution as an example to demonstarte how to draw samples from mixture of gaussians. Starting from Metropolis-Hastings to Hamiltonian MC and finally to Langevin Dynamics, we will get better understandingd of these algorithms.
+Why are we interested in sampling? You might have heard Langevin Dynamics in the score based generative modeling. But what the hell is Langevin Dynamics? Why do we need that? In this blog post, I will use mixture of gaussians distribution as an example to demonstrate how to draw samples from mixture of gaussians. Starting from Metropolis-Hastings to Hamiltonian MC and finally to Langevin Dynamics, we will get better understandings of these algorithms.
 
 ### Problem Statement
 
@@ -38,7 +38,7 @@ def mixture_of_gauss(x: torch.Tensor):
     return prob
 ```
 
-You can adjust the mix ratio, mean vector location and variance matrix (here I assume no covariance between $x_1$ and $x_2$). Now, use your imagination, this distribution will have 3 modes at different centers and the one centered at $[8.0, 8.0]$ should have the largest weights.
+You can adjust the mix ratio, mean vector location and variance matrix (here I assume no covariance between $x_1$ and $x_2$). Now, use your imaginations, this distribution will have 3 modes at different centers and the one centered at $[8.0, 8.0]$ should have the largest weights.
 
 
 ### Metropolis-Hastings (MH)
@@ -145,6 +145,6 @@ Here are the results for Langevin dynamics sampling:
 
 ### Lastly
 
-You can feel that all these methods give similar sampling results. But the actual number of iterations can be different (e.g. in this MH and HMC implementation, there are acceptance and rejection process that could increase the actual iterations). Also, the random seed is chosen that we can see all 3 modes of the gaussian. If you change the seed, sometimes Langevin dynamics only shows 2 modes of the gaussian (also known as mode collapse).
+You may think that all these methods give similar sampling results. But the actual number of iterations can be different (e.g. in this MH and HMC implementation, there are acceptance and rejection process that could increase the actual iterations). Also, the random seed is chosen that we can see all 3 modes of the gaussian. If you change the seed, sometimes Langevin dynamics only shows 2 modes of the gaussian (also known as mode collapse).
 
 The full code is released in [https://github.com/randxie/randxie.github.io/tree/master/code/sampling/main.py](https://github.com/randxie/randxie.github.io/tree/master/code/sampling/main.py). Have fun.
