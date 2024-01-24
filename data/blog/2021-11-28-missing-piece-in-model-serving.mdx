@@ -5,6 +5,8 @@ date: 2021-11-28
 draft: false
 ---
 
+![Materialize View](/static/images/blog/materialize/pipeline-graph.png)
+
 Recently, I read a blog post named ["A Data Pipeline is a Materialized View"](https://nchammas.com/writing/data-pipeline-materialized-view). The viewpoint perfectly aligns with an internal project I am proposing to unify feature generation and serving between training and serving. Therefore, I would like to share some of my recent thinking on feature engineering in real-time ML systems.
 
 For real-time machine learning applications, it's very important to get the feature values right. Depending on the freshness requirements, we usually have both batch system to compute low freshness features ($T-1$) and streaming system to get high freshness features ($o(seconds)$). Then, the feature values from two systems are joined together and supplied into a ML model. 

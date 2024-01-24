@@ -68,7 +68,7 @@ def metropolis_hastings(steps=10000):
     return samples
 ```
 
-For Markov Chain, if the transition matrix satisfies detailed balance condition to a distribution $\pi(x)$ and is ergodic (basically means not trapped in cycles), the markov chain will eventually converge to its stationary distribution. It's also why we ofeten see burn-in period that throws away the initial points. It tries to reduce the impact of the initial points.
+For Markov Chain, if the transition matrix satisfies detailed balance condition to a distribution $\pi(x)$ and is ergodic (basically means not trapped in cycles), the markov chain will eventually converge to its stationary distribution. It's also why we often see burn-in period that throws away the initial points. It tries to reduce the impact of the initial points.
 
 Here are the example result of MH sampling:
 
