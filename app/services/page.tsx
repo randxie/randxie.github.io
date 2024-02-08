@@ -1,9 +1,6 @@
 'use client' // Th'is marks the component for client-side rendering
 
-import {genPageMetadata} from 'app/seo'
-// export const metadata = genPageMetadata({title: 'Services'})
-
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
 export default function Services() {
   useEffect(() => {
@@ -57,10 +54,10 @@ export default function Services() {
           </p>
           <h2 className="text-2xl font-bold mt-8 mb-4">LLM Serving System Course</h2>
           <p className="text-lg text-gray-800 dark:text-gray-300">
-            Currently under development. This course will offer a comprehensive summary of the latest
-            research progress in Large Language Model (LLM) serving systems, presented in an easily
-            digestible format. Participants will benefit from step-by-step exercises and weekly Q&A
-            sessions.
+            Currently under development. This course will offer a comprehensive summary of the
+            latest research progress in Large Language Model (LLM) serving systems, presented in an
+            easily digestible format. Participants will benefit from step-by-step exercises and
+            weekly QA sessions.
           </p>
           <ul className="list-disc list-inside text-lg text-gray-800 dark:text-gray-300 mt-4">
             <li>Transformer Architecture with deep dive into attention</li>
@@ -70,8 +67,7 @@ export default function Services() {
             <li>Distributed LLM serving</li>
           </ul>
           <p className="text-lg text-gray-800 dark:text-gray-300 mt-4">
-            Join the waitlist to receive notifications about the
-            course's availability.
+            Join the waitlist to receive notifications about the course's availability.
           </p>
         </div>
         <div className="launchlist-widget" data-key-id="Unwe21" data-height="180px"></div>
