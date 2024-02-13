@@ -29,8 +29,9 @@ export default function Services() {
         <div className="container py-12">
           <h2 className="text-2xl font-bold mb-4">GenAI Consulting Service</h2>
           <p className="text-lg text-gray-800 dark:text-gray-300">
-            I offer consulting services to startups keen on incorporating Generative AI into their
-            products. My services include product ideation, early-stage prototyping, and system
+            I offer consulting for tech startups and manufacturers aiming to add Generative AI to
+            their products. I believe Generative AI will revolutionize all industries, but talent is
+            scarce. My services include product ideation, early-stage prototyping, and system
             design.<br></br>
             <br></br>
             Rates are project-based and vary according to the project's scope. <br></br>
