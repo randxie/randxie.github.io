@@ -1,10 +1,10 @@
 'use client'
 
-import {useState} from 'react'
-import {usePathname} from 'next/navigation'
-import {formatDate} from 'pliny/utils/formatDate'
-import {CoreContent} from 'pliny/utils/contentlayer'
-import type {Blog} from 'contentlayer/generated'
+import { useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { formatDate } from 'pliny/utils/formatDate'
+import { CoreContent } from 'pliny/utils/contentlayer'
+import type { Blog, RandomThoughts } from 'contentlayer/generated'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -14,13 +14,14 @@ interface PaginationProps {
   currentPage: number
 }
 interface ListLayoutProps {
-  posts: CoreContent<Blog>[]
-  title: string
-  initialDisplayPosts?: CoreContent<Blog>[]
+  posts: CoreContent<Blog | RandomThoughts>[]
+  title?: string
+  initialDisplayPosts?: CoreContent<Blog | RandomThoughts>[]
   pagination?: PaginationProps
+  subtitle?: string
 }
 
-function Pagination({totalPages, currentPage}: PaginationProps) {
+function Pagination({ totalPages, currentPage }: PaginationProps) {
   const pathname = usePathname()
   const basePath = pathname.split('/')[1]
   const prevPage = currentPage - 1 > 0
@@ -84,9 +85,7 @@ export default function ListLayout({
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
           </h1>
-          <div>
-            {subtitle && <p>{subtitle}</p>}
-          </div>
+          {subtitle && <p>{subtitle}</p>}
           <div className="relative max-w-lg">
             <label>
               <span className="sr-only">Search articles</span>
@@ -117,7 +116,7 @@ export default function ListLayout({
         <ul>
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
-            const {path, date, title, summary, tags} = post
+            const { path, date, title, summary, tags } = post
             return (
               <li key={path} className="py-4">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">

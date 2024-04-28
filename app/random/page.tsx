@@ -1,11 +1,11 @@
 import ListLayout from '@/layouts/ListLayout'
-import {allCoreContent, sortPosts} from 'pliny/utils/contentlayer'
-import {allRandomThoughts} from 'contentlayer/generated'
-import {genPageMetadata} from 'app/seo'
+import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
+import { allRandomThoughts } from 'contentlayer/generated'
+import { genPageMetadata } from 'app/seo'
 
 const POSTS_PER_PAGE = 8
 
-export const metadata = genPageMetadata({title: '随笔'})
+export const metadata = genPageMetadata({ title: '随笔' })
 
 export default function BlogPage() {
   const posts = allCoreContent(sortPosts(allRandomThoughts))
