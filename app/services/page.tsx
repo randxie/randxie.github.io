@@ -67,11 +67,11 @@ export default function Services() {
             <li>Implement a single-machine Chat system</li>
             <li>Distributed LLM serving</li>
           </ul>
+          <div className="launchlist-widget" data-key-id="Unwe21" data-height="70px"></div>
           <p className="text-lg text-gray-800 dark:text-gray-300 mt-4">
             Join the waitlist to receive notifications about the course's availability.
           </p>
         </div>
-        <div className="launchlist-widget" data-key-id="Unwe21" data-height="180px"></div>
       </div>
     </>
   )
