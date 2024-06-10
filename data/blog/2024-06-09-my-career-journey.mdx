@@ -1,0 +1,107 @@
+---
+title: "My Journey from Mechanical Engineering to Building LLMs"
+tags: ["Career", "Transitions"]
+date: 2024-06-09
+draft: false
+---
+
+Last week, I was invited to give a talk on my career journey and my experience in building LLMs (Large Language Models) over the past year. Since I had already spent time preparing slides, I thought I just turn it into an article and share it further. I've always believed that diversity in experiences can foster diversity in society. I hope my sharing encourages people to explore unconventional career paths
+
+## Storyline
+
+Over the last eight years, my career has undergone three major transitions:
+
+1. From Mechanical Engineer to Data Scientist
+2. From Data Scientist to ML Infrastructure Engineer
+3. From ML Infrastructure Engineer to training LLM (Large Language Models)
+
+I will share my journey along the timeline, including some of the learning materials that helped me with these transitions.
+
+### From Mechanical Engineer to Data Scientist
+
+I studied mechanical engineering both for my undergraduate and graduate degrees. Although my first job title was Software Engineer, the work still extended from my graduate research, involving writing Matlab toolboxes. A fun fact is that I found my first job through a QQ group (something like WhatsApp). During my graduate studies, I wanted to network more with peers, I joined various groups focused on control theory. It was in one of these groups that I met Yu Jiang, an expert in control theory. We connected, and through his recommendation, I landed an interview. Sometimes, people think networking must always be purposeful, but casual social interactions may lead to unexpected opportunities.
+
+After joining my first company, I noticed that data science was becoming incredibly popular. Then I bumped into Kaggle. At the time, although Kaggle already had many users, not many were seriously competing. My first real competition was the [Bosch Production Line Performance challenge](https://www.kaggle.com/competitions/bosch-production-line-performance). Thinking that my background in mechanical engineering would give me an edge, I was so wrong. I did not get any medals from this competition. However, participating in this competition made me realize the joy of dealing with data and the importance of computing power.
+
+Since I was already working, I was able to affort an Nvidia 1080 GPU along with various components to DIY a deep learning workstation. I knew nothing about hardware at the time, but by researching on [PCPartPicker](https://pcpartpicker.com/list/) and watching various YouTube videos, I managed to successfully assemble the machine.
+
+![My First GPU Machine](/static/images/blog/career-journey/my-first-gpu.webp)
+
+Armed with the right hardware, I was able to participate in some computer vision competitions. At that time, my coding and deep learning skills were quite basic; I was only able to get the [Caffe version of Faster RCNN](https://github.com/rbgirshick/caffe-fast-rcnn) running and tweak a few configuration files. But I always believe learning by doing is the most efficient and we can pick up knowledge along the way. Hence, I entered my second competition, [The Nature Conservancy Fisheries Monitoring](https://www.kaggle.com/competitions/the-nature-conservancy-fisheries-monitoring), where I trained a model to detect fish species. 
+
+![Fish Kaggle](/static/images/blog/career-journey/fish-kaggle.jpg)
+
+As I joined the competition very early, I quickly made it to the top 10, getting lots of positive feedbacks that motivated me to continue until the end. When studying a new field, don't aim to become an expert overnight or blindly follow authoritative sources; instead, build a positive feedback loop so you don't give up in the middle.
+
+By 2017, if you remain engaged throughput a Kaggle competition, securing a bronze medal was feasible; Compiling clues from the forums could get you a silver medal; And for a gold medal, you needed some luck and to find clues that others hadn't thought of. During those months, in addition to my full-time job, I dedicated four hours daily to the competition, including:
+
+- Reading papers on object detection and find corresponding open-source code (since I don't have the skill to implement my own version).
+- Starting model training before going to bed, analyzing results in the morning, and start another round of traning. When I returned from work, a new model was ready for analysis.
+- Analyzing the model's failure mode, trying data augmentation, and searching online for additional data on fish species.
+- Reinstalling the system and CUDA.
+- Enhancing my ML knowledge, primarily devouring ESL (Element of Statistical Learning) and MLAPP (Machine Learning - A Probabilistic Perspective).
+
+Ultimately, I won a gold medal in that competition. Over the next six months, I continued to participate in several contests, and learned how XGBoost works and how to deal with text data through NLP competitions. In that half-year, I won several silver medals.
+
+After winning these medals, I wanted to try a formal data scientist job. My full-time job involved designing algorithms for predictive maintenance (predicting when a machine is going to fail). Just then, a startup in Chicago focused on predictive maintenance was looking for a Data Scientist. The interviewer had also won a Kaggle gold medal. My experience in predictive maintenance was highly relevant. As a result, I got an offer and moved to Chicago for my new adventure.
+
+### From Data Scientist to ML Infrastructure Engineer
+
+I had been at the startup for less than a month when the company began layoffs. It was truly an unexpected turn of events. I had just obtained my H1B work visa, and if laid off, I would have only 30 days to find a new job (this grace period was later extended to 60 days). Hearing the news of the layoffs was a shock, especially since my previous company had never laid off anyone, even during the 2008 financial crisis.
+
+But since it had happened, I decided to act quickly. I firstly applied for numerous Data Scientist positions and swiftly went over "All of Statistics: A Concise Course In Statistical Inference". I naively thought that understanding the Two-sample T-test would suffice for the interviews, but reality proved otherwise. I failed every intereview that required A/B Testing experience.
+
+Meanwhile, a colleague of mine just got a Google offer and told me another career choice. At that time, the interview for entry-level engineers only needed to practice on Leetcode. Since the interview process was already standardized, I decided to give it a shot. After work, I spent all my time studying algorithm and data structure. After two to three months of practicing, I applied to various companies and finally landed a job at Google. The U.S. economy was booming at the time, and big companies were aggressively hiring. It is very different from what we experience in 2024.
+
+![Leetcode Exercise](/static/images/blog/career-journey/leetcode.webp)
+
+After receiving the offer, I had to wait for the H1B transfer. Meanwhile, other colleagues in the company were still preparing for interviews. Since I had some free time, I thought it might be helpful to assist everyone. So, I designed numerous machine learning-related interview questions. Another colleague booked a conference room every day at lunch time, and we would discuss various interview questions while having lunch. I remember one day, just after we finished a discussion and hadn’t yet erased the whiteboard, an Engineering Director walked in to start the next meeting. I quickly went up and erased the whiteboard, and the Director smiled slightly as she watched. I remember that a few months after I left, the Director also left the company.
+
+In this career transition, Leetcode was all I needed. I also tried to prepare for system design interviews by reading classic papers on distributed systems, such as BigTable and MapReduce. I couldn't understand the values of those papers. Later, when I began designing systems at work and returned to these papers, I had a completely different understanding. System design truly is learned through practical experience. Without the opportunity to design complex systems, it's hard to appreciate the beauty of system papers.
+
+After joining Google, I realized there was so much more to learn. For example, when I first started at Google, I didn’t even know what Protobuf was (although Caffe also used Protobuf), nor had I used Python type hints. Apart from algorithms and data structures, I knew virtually nothing about software engineering. Fortunately, Google has countless design documents available for reading. I would say Google is indeed the best place for software engineering.
+
+![Feature Store](/static/images/blog/career-journey/feature-store.webp)
+
+At that time, I didn't have my daughter yet. Google was quite lenient with new employees, so I took the opportunity to study internal documents and improve my computer science fundamentals through online courses. Some of the external resources I found particularly useful included:
+
+1. Designing Data Intensive Applications
+2. CSAPP (Computer Systems: A Programmer's Perspective)
+3. Andy Pavlo’s Database Systems
+4. "Database Internals"
+5. Classic distributed systems papers, e.g., BigTable, Spanner, DynamoDB, Spark, etc.
+6. Engineering blogs from various companies
+
+I also realized something important: many engineers didn't understand machine learning algorithms and basic statistics, which led to awkwardly designed APIs. If one could understand both ML and engineering deeply, they can find the connections and drive innovations. Unfortunately, at my level at the time, even if I saw opportunities, I didn’t have the influence to drive change. In a large organization like Google, the primary task for junior engineers is to execute. The breadth of knowledge only pays off at higher levels because it helps connect different teams by being able to speak different language.
+
+Realizing this, I left Google after 2.5 years to join a rapidly growing FinTech company. When I joined, the company's ML infrastructure was literally non-existent. This gave me the opportunity to build an entire ML infrastructure from scratch and also developed my soft skills, including:
+
+- Interviewed 3-4 candidates a week for nearly half a year.
+- Observed the resilience of an organization; the company went through several big incidents but the whole organization usually stabilized within two weeks.
+- Survived three rounds of layoffs, which greatly enhanced my resilience.
+- Directly handle cross-team conflicts. It wasn’t about right or wrong, but about protecting my team during economic downturns.
+
+Through this experience, I learned that it takes about 3-4 years to grow from a junior engineer to a good engineer. Beyond engineering problems, dealing with people is often more complex and unpredictable. Having the skills to handle conflicts is important for engineers at Staff+ level.
+
+### From ML Infra Engineer to GenAI (Generative AI)
+
+One reason I moved into ML infrastructure was because I felt that progress in model architectures wasn't particularly significant and there wouldn't be many breakthroughs in the short term. Of course, the emergence of ChatGPT later proved how inaccurate my forecast was. 
+
+So, why did I decide to shift from ML infrastructure to working on Generative AI? In September 2022, the weights of Stable Diffusion were released. At that moment, I suddenly realized that generative models had reached such impressive capabilities. I spent so much time on infrastructure that I hadn't paid enough attention to the advancements in the models. Then, the release of ChatGPT allowed every one to directly interact with it. I was deeply amazed by the power of generative models.
+
+![Text-to-SQL](/static/images/blog/career-journey/text-to-sql.webp)
+
+At that time, many people inside the company were also very excited. As the only ML Infrastructure team in the company, I was able to find opportunities to try applying LLM (Large Language Model) into products. I also built a Text-to-SQL project in my spare time, intensively interacting with OpenAI's API to understand the limitations of LLMs. While I had identified many pitfalls of LLMs, this did not make me less excited.
+
+Unfortunately, I was at an Fintect company where 90% of valuable machine learning applications were in fraud detection. With the field of LLMs undergoing rapid changes every day, I felt like I was wasting my life during that period. Therefore, I quit without a new job, which allowed me to study LLMs without any distractions. 
+
+My primary resources for studying LLMs were all sorts of papers. I had maintained the habit of reading papers in my previous jobs, so I am not afraid of learning new knowledge directly from papers. Another good resource was LLM serving framework, e.g., llama.cpp, vllm. Although we couldn't train a LLM with these serving frameworks, we could open the black box of LLMs by inspecting how the responses are generated step by step.
+
+### Lastly
+
+That sums up my story over the past eight years, and here are a few key takeaways:
+
+- Don't let your colleague major limit yourself; Continue to be curious.
+- Having broad knowledge can be a very useful tool.
+- "Useless" socializing might lead to unexpected results.
+
